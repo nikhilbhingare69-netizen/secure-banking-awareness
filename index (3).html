@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Secure Banking Awareness Programme</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,sans-serif;background:#f4f7fb;color:#222;line-height:1.6}
+header{background:#164a8a;color:white;padding:14px 7%;position:sticky;top:0;z-index:20}
+.nav{display:flex;justify-content:space-between;align-items:center}
+.logo{font-size:21px;font-weight:bold}
+.logo span{color:#ffd54f}
+nav a{color:white;text-decoration:none;margin-left:20px;font-size:14px}
+nav a:hover{color:#ffd54f}
+.hero{background:linear-gradient(135deg,#dff0ff,#ffffff);padding:65px 8%;text-align:center;border-bottom:1px solid #d7e1ed}
+.hero .tag{display:inline-block;background:#fff3cd;color:#765900;border:1px solid #ffe08a;padding:5px 13px;border-radius:20px;font-size:13px;font-weight:bold}
+.hero h1{font-size:42px;color:#164a8a;margin:14px 0 8px}
+.hero p{max-width:720px;margin:auto;color:#555;font-size:17px}
+.btn{display:inline-block;background:#164a8a;color:white;padding:11px 20px;border-radius:6px;text-decoration:none;margin-top:22px;border:none;cursor:pointer;font-weight:bold}
+.btn:hover{background:#0d3768}
+section{padding:55px 8%}
+.title{text-align:center;margin-bottom:32px}
+.title h2{color:#164a8a;font-size:29px}
+.title p{color:#666;margin-top:5px}
+.intro{display:grid;grid-template-columns:2fr 1fr;gap:25px}
+.box{background:white;border:1px solid #dce5ef;border-radius:10px;padding:25px;box-shadow:0 3px 10px #0000000b}
+.box h3{color:#164a8a;margin-bottom:10px}
+.highlight{background:#fff8dc;border-left:5px solid #f2c94c}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.step{background:white;border:1px solid #dce5ef;border-radius:10px;padding:22px;position:relative}
+.step-num{position:absolute;right:16px;top:16px;background:#164a8a;color:#fff;width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font-weight:bold}
+.step h3{color:#164a8a;margin-bottom:8px;padding-right:35px}
+.step p{font-size:14px;color:#555}
+.step ul{margin:10px 0 0 18px;font-size:14px;color:#444}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.stat{text-align:center;background:#164a8a;color:white;padding:25px;border-radius:9px}
+.stat strong{font-size:30px;display:block;color:#ffd54f}
+.stat p{font-size:14px}
+.scams{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.scam{background:white;padding:22px;border-radius:9px;border:1px solid #dce5ef}
+.scam h3{color:#b33b2e}
+.scam .sign{background:#fff0ee;padding:10px;margin-top:10px;font-size:14px;border-radius:5px}
+.checklist{max-width:850px;margin:auto;background:white;padding:25px;border-radius:10px;border:1px solid #dce5ef}
+.check{display:block;padding:13px;border-bottom:1px solid #edf0f4}
+.check:last-child{border:0}
+.check input{margin-right:10px}
+#score{margin-top:18px;text-align:center;font-weight:bold;color:#164a8a}
+.quiz{max-width:750px;margin:auto;background:white;border:1px solid #dce5ef;padding:25px;border-radius:10px}
+.question{margin-bottom:25px}
+.question h3{font-size:16px;margin-bottom:10px;color:#333}
+.option{display:block;width:100%;padding:10px;text-align:left;background:#f7f9fc;border:1px solid #d9e2ec;border-radius:5px;margin:7px 0;cursor:pointer}
+.option:hover{background:#e9f3ff}
+.result{margin-top:18px;padding:13px;border-radius:6px;display:none}
+.good{background:#e8f7ed;color:#176b35}
+.bad{background:#fff0ee;color:#a52b20}
+.emergency{background:#fff0ee;border:1px solid #f1c2bd}
+footer{background:#163b68;color:#dce9f7;padding:35px 8%;text-align:center}
+footer h3{color:white;margin-bottom:8px}
+footer p{font-size:13px}
+@media(max-width:800px){
+ nav{display:none}.hero h1{font-size:32px}
+ .intro,.steps,.stats,.scams{grid-template-columns:1fr}
+ section{padding:40px 6%}
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="nav">
+<div class="logo">🔒 Secure Banking <span>Awareness</span></div>
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#steps">Safety Steps</a>
+<a href="#scams">Frauds</a>
+<a href="#quiz">Quiz</a>
+</nav>
+</div>
+</header>
+
+<section class="hero" id="home">
+<span class="tag">COLLEGE AWARENESS PROJECT</span>
+<h1>Secure Online Banking Awareness Programme</h1>
+<p>A simple website created to spread awareness about safe online banking, UPI payments, passwords, OTPs and common digital banking frauds.</p>
+<a href="#steps" class="btn">Start Learning</a>
+</section>
+
+<section id="about">
+<div class="title">
+<h2>About the Programme</h2>
+<p>Why do we need online banking awareness?</p>
+</div>
+<div class="intro">
+<div class="box">
+<h3>What is Online Banking?</h3>
+<p>Online banking allows people to perform banking activities using a mobile phone or computer. We can check our balance, transfer money, pay bills and use UPI without visiting a bank branch.</p>
+<br>
+<p>Because banking is now digital, users should know how to identify suspicious messages, fake websites and fraudulent payment requests.</p>
+</div>
+<div class="box highlight">
+<h3>Our Main Goal</h3>
+<p>To teach basic safety habits that can help students and other users use digital banking more carefully.</p>
+<br>
+<b>Remember:</b><br>
+Stop → Check → Think → Pay
+</div>
+</div>
+</section>
+
+<section>
+<div class="title">
+<h2>Some Important Facts</h2>
+<p>Basic security habits can make a big difference.</p>
+</div>
+<div class="stats">
+<div class="stat"><strong>1</strong><p>OTP should be kept private</p></div>
+<div class="stat"><strong>0</strong><p>Bank should need your UPI PIN to send money to you</p></div>
+<div class="stat"><strong>24×7</strong><p>Stay alert when using digital payments</p></div>
+</div>
+</section>
+
+<section id="steps">
+<div class="title">
+<h2>Step-by-Step Banking Safety</h2>
+<p>Follow these simple steps whenever you use online banking.</p>
+</div>
+<div class="steps">
+<div class="step"><div class="step-num">1</div><h3>Use a Strong Password</h3><p>Use a unique and difficult-to-guess password for banking accounts.</p><ul><li>Do not use your name or birthday.</li><li>Do not reuse your banking password.</li></ul></div>
+<div class="step"><div class="step-num">2</div><h3>Never Share OTP</h3><p>OTP is private information used to verify certain transactions or logins.</p><ul><li>Never tell your OTP to callers.</li><li>Do not send OTP screenshots.</li></ul></div>
+<div class="step"><div class="step-num">3</div><h3>Protect Your UPI PIN</h3><p>Keep your UPI PIN secret and enter it only when you intentionally authorise a payment.</p><ul><li>Check the recipient first.</li><li>Never enter a PIN just to receive money.</li></ul></div>
+<div class="step"><div class="step-num">4</div><h3>Check Links</h3><p>Fake links may look similar to real bank websites or services.</p><ul><li>Do not click unknown links.</li><li>Open the bank app or website yourself.</li></ul></div>
+<div class="step"><div class="step-num">5</div><h3>Secure Your Phone</h3><p>Your phone may contain banking apps and sensitive information.</p><ul><li>Use screen lock.</li><li>Keep software updated.</li><li>Avoid unknown apps.</li></ul></div>
+<div class="step"><div class="step-num">6</div><h3>Check Transactions</h3><p>Regularly check account statements and transaction alerts.</p><ul><li>Report unknown transactions quickly.</li><li>Keep transaction reference details.</li></ul></div>
+<div class="step"><div class="step-num">7</div><h3>Avoid Screen Sharing</h3><p>Fraudsters may ask you to install remote-access applications.</p><ul><li>Do not give strangers remote access.</li><li>Contact your bank directly.</li></ul></div>
+<div class="step"><div class="step-num">8</div><h3>Be Careful on Public Wi-Fi</h3><p>Avoid sensitive banking activity on unknown or unsecured networks.</p><ul><li>Prefer trusted networks.</li><li>Use mobile data when appropriate.</li></ul></div>
+<div class="step"><div class="step-num">9</div><h3>Use Official Contact Details</h3><p>If you have a problem, contact the bank through its official app, website or card information.</p><ul><li>Do not trust numbers sent by strangers.</li></ul></div>
+</div>
+</section>
+
+<section id="scams">
+<div class="title">
+<h2>Common Online Banking Frauds</h2>
+<p>Knowing common fraud methods helps us recognise warning signs.</p>
+</div>
+<div class="scams">
+<div class="scam"><h3>📩 Phishing</h3><p>Fake emails or messages may ask you to click a link and enter banking information.</p><div class="sign"><b>Warning sign:</b> Urgent message asking you to “verify” your account.</div></div>
+<div class="scam"><h3>📞 Fake Bank Calls</h3><p>Someone may pretend to be a bank employee and ask for OTP, PIN or other confidential information.</p><div class="sign"><b>Warning sign:</b> Caller asks for secret information.</div></div>
+<div class="scam"><h3>💸 Fake UPI Requests</h3><p>A fraudster may send a payment request and try to convince you to approve it.</p><div class="sign"><b>Warning sign:</b> You are asked to approve an unexpected payment.</div></div>
+<div class="scam"><h3>📱 Remote Access Scam</h3><p>Someone may ask you to install an app so they can “help” with a banking problem.</p><div class="sign"><b>Warning sign:</b> Stranger asks to control or view your screen.</div></div>
+</div>
+</section>
+
+<section>
+<div class="title">
+<h2>My Banking Safety Checklist</h2>
+<p>Tick the points you already follow.</p>
+</div>
+<div class="checklist">
+<label class="check"><input type="checkbox" class="safecheck"> I never share OTP or UPI PIN.</label>
+<label class="check"><input type="checkbox" class="safecheck"> I check the recipient before making a payment.</label>
+<label class="check"><input type="checkbox" class="safecheck"> I use a screen lock on my phone.</label>
+<label class="check"><input type="checkbox" class="safecheck"> I avoid suspicious links.</label>
+<label class="check"><input type="checkbox" class="safecheck"> I keep banking apps updated.</label>
+<label class="check"><input type="checkbox" class="safecheck"> I check my transaction alerts.</label>
+<button class="btn" onclick="checkSafety()">Check My Score</button>
+<div id="score"></div>
+</div>
+</section>
+
+<section id="quiz">
+<div class="title">
+<h2>Online Banking Awareness Quiz</h2>
+<p>Test your knowledge.</p>
+</div>
+<div class="quiz">
+<div class="question">
+<h3>1. Someone calls and asks for your OTP. What should you do?</h3>
+<button class="option" onclick="quiz(this,false)">Give the OTP</button>
+<button class="option" onclick="quiz(this,true)">Do not share it and end the call</button>
+</div>
+<div class="question">
+<h3>2. Before making a UPI payment, what should you check?</h3>
+<button class="option" onclick="quiz(this,true)">Recipient and amount</button>
+<button class="option" onclick="quiz(this,false)">Only the phone battery</button>
+</div>
+<div class="question">
+<h3>3. What should you do if you notice an unknown transaction?</h3>
+<button class="option" onclick="quiz(this,true)">Contact the bank through an official channel quickly</button>
+<button class="option" onclick="quiz(this,false)">Ignore it</button>
+</div>
+<div id="quizResult" class="result"></div>
+<button class="btn" onclick="location.reload()">Restart Quiz</button>
+</div>
+</section>
+
+<section>
+<div class="title">
+<h2>What To Do If You Are Scammed?</h2>
+</div>
+<div class="box emergency">
+<ol style="margin-left:20px">
+<li>Contact your bank immediately using an official channel.</li>
+<li>Secure or block the affected card/account if advised by the bank.</li>
+<li>Save transaction details, screenshots and reference numbers.</li>
+<li>Report the incident to the appropriate cybercrime authority.</li>
+<li>Do not send more money to the person claiming they can recover your money.</li>
+</ol>
+<br>
+<p><b>For India:</b> suspected financial cyber fraud can be reported through the official government cybercrime reporting system and helpline 1930. Always verify the current details through official government sources.</p>
+</div>
+</section>
+
+<footer>
+<h3>Secure Online Banking Awareness Programme</h3>
+<p>College Mini Project • Digital Safety Awareness</p>
+<p style="margin-top:8px">Created for educational purposes. This website does not collect passwords, OTPs, PINs or bank details.</p>
+</footer>
+
+<script>
+function checkSafety(){
+ const boxes=document.querySelectorAll('.safecheck');
+ let count=0; boxes.forEach(b=>{if(b.checked)count++});
+ const score=document.getElementById('score');
+ score.textContent="You completed "+count+" out of "+boxes.length+" safety points.";
+}
+let total=0, answered=0;
+function quiz(btn,correct){
+ answered++;
+ btn.style.background=correct?"#dff5e5":"#ffe1dd";
+ btn.disabled=true;
+ if(correct)total++;
+ if(answered===3){
+  const r=document.getElementById('quizResult');
+  r.style.display="block";
+  r.className="result "+(total===3?"good":"bad");
+  r.textContent="Your score: "+total+"/3. "+(total===3?"Excellent! You know the basic safety rules.":"Review the safety steps above and try again.");
+ }
+}
+</script>
+</body>
+</html>
